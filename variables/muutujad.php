@@ -26,7 +26,7 @@ echo '<hr>';
 //tüübikontroll
 echo gettype($sone);
 echo '<br>';
-$summa = $sone + $sone;
+$summa = $sone.$sone;
 settype($summa, 'string');
 echo gettype($summa);
 echo 'Summa = '.$summa.'<br>';
