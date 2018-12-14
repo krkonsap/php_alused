@@ -1,5 +1,5 @@
 <?php
-header('refresh: 2');
+header('refresh: 1.5');
 /**
  * Created by PhpStorm.
  * User: kristjan.konsap
@@ -19,8 +19,13 @@ header('refresh: 2');
  */
 ?>
 <style>
-    table, tr, td{
-        width: 20px;
+    table{
+        width: 200px;
+        border-collapse: collapse;
+    }
+    tr, td{
+        height: 40px;
+        /*width: 30px;*/
         border: solid 1px black;
         border-collapse: collapse;
     }
@@ -49,6 +54,10 @@ echo '<table>';
         for($kord = 1; $kord <= 6; $kord++){
             $varv = $varv.dechex(rand(0,15));
         }
+            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
+            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
+            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
+            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
             echo '<td style= "background: '.$varv.'">&nbsp;</td>';
         echo '</tr>';
     }
