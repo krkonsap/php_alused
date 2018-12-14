@@ -84,8 +84,8 @@ switch ($aktiivne){
         echo '<div style="background: green"></div>';
         break;
     default:
-        echo '<div style=""></div>';
         echo '<div style="background: black"></div>';
-        echo '<div style=""></div>';
+        echo '<div style="background: black"></div>';
+        echo '<div style="background: black"></div>';
         break;
 }
