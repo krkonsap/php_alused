@@ -28,6 +28,7 @@ header('refresh: 5');
         /*width: 30px;*/
         border: solid 1px black;
         border-collapse: collapse;
+        text-align: center;
     }
     th{
         border: solid 1px black;
@@ -96,3 +97,59 @@ echo '<table>';
         echo '</tr>';
     }
 echo '</table>';
+
+//while tsükkel
+
+/*
+ * while(tingimus){
+ *      tegevused mis toimivad kuni tingimus kehtib
+ * }
+ */
+
+echo '<h5>while</h5>';
+$arv = 1234;
+while($arv != 0){
+    $number = $arv % 10;
+    echo 'Number = '.$number.'<br>';
+    $arv = $arv / 10;
+    echo 'Arv ümardamata = '.$arv.'<br>';
+    settype($arv, 'int');
+    echo 'Arv int = '.$arv.'<br>';
+//    $summa = $summa + $number;
+    $summa += $number;
+    echo '<hr>';
+}
+echo 'Arvu numbrite summa = '.$summa.'<br>';
+
+// lisaülesanne
+
+echo '<h5>lisaül</h5>';
+$arv5 = 48557812535;
+$kordused = 0;
+echo 'Arv on: '.$arv5;
+while($arv5 != 0){
+    $number = $arv5 % 10;
+    echo 'Number = '.$number.'<br>';
+    $arv5 = $arv5 / 10;
+    echo 'Arv ümardamata = '.$arv.'<br>';
+    settype($arv5, 'int');
+    echo 'Arv int = '.$arv5.'<br>';
+    if($number == 5) $kordused++;
+}
+echo 'Number viis esineb selles arvus '.$kordused.' korda.';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
