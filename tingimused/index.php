@@ -5,7 +5,7 @@
  * Date: 14.12.2018
  * Time: 12:32
  */
-
+header('refresh: 5');
 //tingimuslaused
 /*
  * if(tingimus) {
@@ -38,5 +38,54 @@ if($arv >= 0 and $arv < 25){
     echo '<div style="color: black">'.$arv.'</div>';
 };
 
-//ex 3
-echo '<h5>ül 3</h5>';
+
+//switch
+
+/*
+ * switch (kontroll){
+ *      case vastus:
+ *          tegevused, mis case puhul toimivad
+ *          break;
+ *      default:
+ *          tegevused, mis on siis kui muu ei sobi
+ *          break
+ * }
+ */
+
+//valgusfoor
+?>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: solid 1px black;
+    }
+
+</style>
+
+<?php
+echo '<h5>valgusfoor</h5>';
+$aktiivne = 'roheline';
+switch ($aktiivne){
+    case 'punane':
+        echo '<div style="background: red"></div>';
+        echo '<div style=""></div>';
+        echo '<div style=""></div>';
+        break;
+    case 'kollane':
+        echo '<div style=""></div>';
+        echo '<div style="background: yellow"></div>';
+        echo '<div style=""></div>';
+        break;
+    case 'roheline':
+        echo '<div style=""></div>';
+        echo '<div style=""></div>';
+        echo '<div style="background: green"></div>';
+        break;
+    default:
+        echo '<div style=""></div>';
+        echo '<div style="background: black"></div>';
+        echo '<div style=""></div>';
+        break;
+}
