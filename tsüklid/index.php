@@ -1,5 +1,5 @@
 <?php
-header('refresh: 1.5');
+header('refresh: 0.5');
 /**
  * Created by PhpStorm.
  * User: kristjan.konsap
@@ -20,11 +20,11 @@ header('refresh: 1.5');
 ?>
 <style>
     table{
-        width: 200px;
+        width: 500px;
         border-collapse: collapse;
     }
     tr, td{
-        height: 40px;
+        height: 2px;
         /*width: 30px;*/
         border: solid 1px black;
         border-collapse: collapse;
@@ -48,17 +48,24 @@ for($arv =1; $arv <= 10; $arv++){
 
 echo '<h5>ül 2</h5>';
 echo '<table>';
-    for($reaNumber = 1; $reaNumber <= 5; $reaNumber++){
+    for($reaNumber = 1; $reaNumber <= 20; $reaNumber++){
         echo '<tr>';
-        $varv = '#';
+        /*$varv = '#';
         for($kord = 1; $kord <= 6; $kord++){
             $varv = $varv.dechex(rand(0,15));
-        }
+        }*/
+            for($veeruNr = 1; $veeruNr <= 20; $veeruNr++){
+                $varv = '#';
+                for($kord = 1; $kord <= 6; $kord++){
+                    $varv = $varv.dechex(rand(0,15));
+                }
+                echo '<td style= "background: '.$varv.'">&nbsp;</td>';
+            }
+            /*echo '<td style= "background: '.$varv.'">&nbsp;</td>';
             echo '<td style= "background: '.$varv.'">&nbsp;</td>';
             echo '<td style= "background: '.$varv.'">&nbsp;</td>';
             echo '<td style= "background: '.$varv.'">&nbsp;</td>';
-            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
-            echo '<td style= "background: '.$varv.'">&nbsp;</td>';
+            echo '<td style= "background: '.$varv.'">&nbsp;</td>';*/
         echo '</tr>';
     }
 echo '</table>';
