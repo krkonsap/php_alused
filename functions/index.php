@@ -16,3 +16,11 @@ function bighello() {
     print '<h1>HELLO!</h1>';
 }
 bighello();
+
+//argumentidega funktsioon
+function printBR($txt) {
+    print("$txt<br>\n");
+}
+printBR('See on rida.');
+printBR('See on ka rida.');
+printBR('See on veel üks uus rida.');
