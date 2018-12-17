@@ -79,7 +79,16 @@ print('We buid a fine range of widgets<p>');
 andAnotherThing('Doodads');
 print('Finest in the world<p>');
 
+echo '<hr>';
 
+//argumentide vaikimisi väärtused
+function fontWrap($txt, $size) {
+    print '<font size='.$size.' face= Helvetica, Arial, Sans_serif>'.$txt.'</font>';
+}
+fontWrap('A heading<br>', 5);
+fontWrap('some body text<br>', 3);
+fontWrap('more body text<br>', 3);
+fontWrap('yet more body text<br>', 3);
 
 
 
