@@ -101,7 +101,14 @@ addFive($orignum);
 print($orignum);
 
 echo '<hr>';
-
+?>
+<style>
+    table, tr, td{
+        border: solid 1px black;
+        border-collapse: collapse;
+    }
+</style>
+<?php
 //iseseisev ül tekstisõnumi tabel
 function returnTable($value1, $value2, $value3, $value4){
     echo '<table>'.'<tr>'.'<td>'.$value1.'</td>'.'<td>'.$value2.'</td>'.'<td>'.$value3.'</td>'.'<td>'.$value4.'</td>'.'</tr>'.'</table>';
