@@ -90,6 +90,26 @@ fontWrap('some body text<br>', 3);
 fontWrap('more body text<br>', 3);
 fontWrap('yet more body text<br>', 3);
 
+echo '<hr>';
+
+//argumendid viite abil
+function addFive($num){
+    $num += 5;
+}
+$orignum = 10;
+addFive($orignum);
+print($orignum);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
