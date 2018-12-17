@@ -24,3 +24,11 @@ function printBR($txt) {
 printBR('See on rida.');
 printBR('See on ka rida.');
 printBR('See on veel üks uus rida.');
+
+//funktsioon väärtuste tagastamiseks
+function addNums($firstnum, $secondnum){
+    $result = $firstnum + $secondnum;
+    return $result;
+}
+print 'Kolm pluss viis on '.addNums(3,5).'.';
+
