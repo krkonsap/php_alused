@@ -93,7 +93,7 @@ fontWrap('yet more body text<br>', 3);
 echo '<hr>';
 
 //argumendid viite abil
-function addFive($num){
+function addFive(&$num){
     $num += 5;
 }
 $orignum = 10;
