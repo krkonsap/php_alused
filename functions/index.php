@@ -100,7 +100,13 @@ $orignum = 10;
 addFive($orignum);
 print($orignum);
 
+echo '<hr>';
 
+//iseseisev ül tekstisõnumi tabel
+function returnTable($value1, $value2, $value3, $value4){
+    echo '<table>'.'<tr>'.'<td>'.$value1.'</td>'.'<td>'.$value2.'</td>'.'<td>'.$value3.'</td>'.'<td>'.$value4.'</td>'.'</tr>'.'</table>';
+}
+returnTable('esimene', 'teine', 'kolmas','neljas');
 
 
 
