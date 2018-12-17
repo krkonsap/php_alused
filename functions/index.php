@@ -11,11 +11,15 @@ $num = - 321;
 $newnum = abs($num);
 print $newnum;
 
+echo '<hr>';
+
 //hello funktsioon
 function bighello() {
     print '<h1>HELLO!</h1>';
 }
 bighello();
+
+echo '<hr>';
 
 //argumentidega funktsioon
 function printBR($txt) {
@@ -25,6 +29,8 @@ printBR('See on rida.');
 printBR('See on ka rida.');
 printBR('See on veel üks uus rida.');
 
+echo '<hr>';
+
 //funktsioon väärtuste tagastamiseks
 function addNums($firstnum, $secondnum){
     $result = $firstnum + $secondnum;
@@ -32,3 +38,11 @@ function addNums($firstnum, $secondnum){
 }
 print 'Kolm pluss viis on '.addNums(3,5).'.';
 
+echo '<hr>';
+
+//dünaamilised väljakutsed
+function sayHello() {
+    print 'Hello<br>';
+}
+$function_holder = 'sayHello';
+$function_holder();
