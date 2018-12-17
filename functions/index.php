@@ -53,7 +53,16 @@ echo '<hr>';
 function test() {
     $testvariable = 'this is a test variable';
 }
-print 'test variable: '.$testvariable.'<br';
+print 'test variable: '.$testvariable.'<br>';
+
+echo '<hr>';
+
+//global muutuja
+$life = 42;
+function meaningOfLife() {
+    print 'The meaning of life is '.$life.'<br>';
+}
+meaningOfLife();
 
 
 
