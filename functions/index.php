@@ -10,3 +10,9 @@
 $num = - 321;
 $newnum = abs($num);
 print $newnum;
+
+//hello funktsioon
+function bighello() {
+    print '<h1>HELLO!</h1>';
+}
+bighello();
