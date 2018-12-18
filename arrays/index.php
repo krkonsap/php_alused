@@ -16,3 +16,9 @@ $kasutajad = array(
 for($i = 0; $i < count($kasutajad); $i++){
     echo $i.' - '.$kasutajad[$i].'<br>';
 }
+
+echo '<hr>';
+
+foreach ($kasutajad as $kasutaja){
+    echo $kasutaja.'<br>';
+}
