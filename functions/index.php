@@ -106,6 +106,7 @@ echo '<hr>';
     table, tr, td{
         border: solid 1px black;
         border-collapse: collapse;
+        padding: 5px;
     }
 </style>
 <?php
@@ -114,6 +115,24 @@ function returnTable($value1, $value2, $value3, $value4){
     echo '<table>'.'<tr>'.'<td>'.$value1.'</td>'.'<td>'.$value2.'</td>'.'<td>'.$value3.'</td>'.'<td>'.$value4.'</td>'.'</tr>'.'</table>';
 }
 returnTable('esimene', 'teine', 'kolmas','neljas');
+
+echo '<hr>';
+
+//uus tabel
+function returnTable2($text1, $text2, $text3, $text4){
+    echo '<table>';
+        echo '<tr>';
+            for($i = 1; $i <= 4; $i++){
+                echo '<td>';
+                    /*echo ${'text'.$i};*/
+                    echo $text.$i;
+                echo '</td>';
+            }
+        echo '</tr>';
+    echo '</table>';
+
+};
+returnTable('tere', 'see', 'on', 'tabel');
 
 
 
