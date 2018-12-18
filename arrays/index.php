@@ -54,3 +54,48 @@ print_r($kasutajad);
 echo '</pre>';
 
 echo '<hr>';
+//sorteerime viimasest alates (r)
+rsort($kasutajad);
+
+echo '<pre>';
+print_r($kasutajad);
+echo '</pre>';
+
+echo '<hr>';
+//kahemõõtmeline massiiv
+
+$kasutajad3 = array(
+    array(
+        'alice',
+        'Alice',
+        'Liddle'
+    ),
+    array(
+        'bob',
+        'Bob',
+        'Builder'
+    ),
+);
+
+echo '<pre>';
+print_r($kasutajad3);
+echo '</pre>';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
