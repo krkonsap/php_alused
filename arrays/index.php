@@ -68,18 +68,39 @@ $kasutajad3 = array(
     array(
         'alice',
         'Alice',
-        'Liddle'
+        'Liddle',
+        'female'
     ),
     array(
         'bob',
         'Bob',
-        'Builder'
+        'Builder',
+        'male'
     ),
 );
 
 echo '<pre>';
 print_r($kasutajad3);
 echo '</pre>';
+
+//divi värvimine vastavalt soole
+
+foreach ($kasutajad3 as $kasutaja3){
+    if ($kasutaja3[3] == 'male') {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<div style="background-color: deepskyblue">' . $sisuelement . '</div>';
+        }
+    } else if ($kasutaja3[3] == 'female') {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<div style="background-color: red">' . $sisuelement . '</div>';
+        }
+    } else {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<div style="background-color: darkgray">' . $sisuelement . '</div>';
+        }
+    }
+    echo '<hr>';
+}
 
 
 
