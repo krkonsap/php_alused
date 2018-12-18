@@ -92,7 +92,7 @@ foreach ($kasutajad3 as $kasutaja3){
         }
     } else if ($kasutaja3[3] == 'female') {
         foreach ($kasutaja3 as $sisuelement) {
-            echo '<div style="background-color: red">' . $sisuelement . '</div>';
+            echo '<div style="background-color: palevioletred">' . $sisuelement . '</div>';
         }
     } else {
         foreach ($kasutaja3 as $sisuelement) {
@@ -100,6 +100,33 @@ foreach ($kasutajad3 as $kasutaja3){
         }
     }
     echo '<hr>';
+}
+
+//eelmiste andmete näitamine tabelis
+echo '<table>';
+echo '<tr>
+        <th>Kasutaja</th>
+        <th>Eesnimi</th>
+        <th>Perenimi</th>
+        <th>sugu</th>
+     </tr>';
+
+foreach ($kasutajad3 as $kasutaja3){
+    echo '<tr>';
+    if ($kasutaja3[3] == 'male') {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<td style="background-color: deepskyblue">' . $sisuelement . '</td>';
+        }
+    } else if ($kasutaja3[3] == 'female') {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<td style="background-color: palevioletred">' . $sisuelement . '</td>';
+        }
+    } else {
+        foreach ($kasutaja3 as $sisuelement) {
+            echo '<td style="background-color: darkgray">' . $sisuelement . '</td>';
+        }
+    }
+
 }
 
 
