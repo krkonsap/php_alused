@@ -156,8 +156,16 @@ foreach ($kasutajad3 as $kasutaja3){
           age=>63,
           speciality=>"nanotech")
       );
-  print $characters[0][occupation];
-  //prints "superhero"
+
+  foreach ($characters as $val)
+  {
+      foreach ($val as $key=>$final_val)
+      {
+          print '$key: $final_val<br>';
+      }
+      print '<br>';
+  }
+
   ?>
 
   </body>
