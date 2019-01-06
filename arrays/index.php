@@ -128,6 +128,40 @@ foreach ($kasutajad3 as $kasutaja3){
     }
 
 }
+?>
+
+<!-- andmestruktuuri loomine mitmemõõtmelise massiivi kasutamisega -->
+
+<html>
+  <head>
+    <title>listing 7.1</title>
+  </head>
+  <body>
+
+  <?php
+  $characters = array (
+      array (
+          name=>"bob",
+          occupation=>"superhero",
+          age=>30,
+          speciality=>"x-ray vision"),
+      array (
+          name=>"sally",
+          occupation=>"superhero",
+          age=>24,
+          speciality=>"superstrength"),
+      array (
+          name=>"mary",
+          occupation=>"villain",
+          age=>63,
+          speciality=>"nanotech")
+      );
+  print $characters[0][occupation];
+  //prints "superhero"
+  ?>
+
+  </body>
+</html>
 
 
 
