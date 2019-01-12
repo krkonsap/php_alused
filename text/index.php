@@ -7,7 +7,7 @@
  */
 //teksti vormindamine
 
-$tekst = 'see on mingi tekst';
+$tekst = '       see on mingi tekst       ';
 
 echo strtolower($tekst);
 echo '<br>';
@@ -22,4 +22,11 @@ echo '<br>';
 echo str_word_count($tekst);
 
 echo '<hr>';
-//
+// teksti kärpimine
+
+echo "<pre>$tekst</pre>";
+echo "<pre>".trim($tekst)."</pre>";
+echo "<pre>".ltrim($tekst)."</pre>";
+echo "<pre>".rtrim($tekst)."</pre>";
+
+echo '<hr>';
