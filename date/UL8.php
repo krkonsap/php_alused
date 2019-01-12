@@ -18,3 +18,16 @@ $days = ['esmaspäev', 'teisipäev', 'kolmapäev', 'neljapäev', 'reede','laupä
 $day = date('w', strtotime($date));
 $date = 'Täna on'." $days[$day].";
 echo $date;
+
+echo '<hr>';
+//Kuva eestikeelne kuupäev koos nädalapäevaga.
+$eesti_kuud = array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august', 'september', 'oktoober', 'november', 'detsember');
+//kuupäevad massiividesse
+$paev = date('d');
+$kuu = $eesti_kuud[date('n')];
+$aasta = date('Y');
+//kuupäeva väljastamine
+echo 'Täna on '.$paev.'. '.$kuu.' '.$aasta.', '.$days[$day].'.';
+
+echo '<hr>';
+
