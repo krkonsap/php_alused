@@ -26,7 +26,14 @@ echo 'Kera ruumala on '.kera().' kuupmeetrit.';
 
 //koonuse ruumala = pii * r**2 * (h/3)
 
-
+function koonus(){
+    global $r;
+    global $h;
+    global $pii;
+    $koonuseV = $pii * ($r ** 2) * ($h / 3);
+    return $koonuseV;
+}
+echo 'Koonuse ruumala on '.koonus().' kuupmeetrit.';
 
 //silindri ruumala = pii * r**2 * h
 
