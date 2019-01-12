@@ -31,3 +31,11 @@ echo 'Täna on '.$paev.'. '.$kuu.' '.$aasta.', '.$days[$day].'.';
 
 echo '<hr>';
 
+//mitu päeva on jäänud järgmise jaanipäevani
+$jaanipaev = mktime(0,0,0,6,24,2019);
+$tanapaev = time();
+$jaanipaevani = $jaanipaev - $tanapaev;
+
+echo 'Jaanipäevani on jäänud '. floor($jaanipaevani/60/60/24).' päeva.';
+
+echo '<hr>';
