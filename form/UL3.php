@@ -12,6 +12,8 @@ $h = $_GET['h'];
 echo 'Raadius: '.$r.' m<br>';
 echo 'Kõrgus: '.$h.' m<br>';
 
+echo '<br>';
+
 $pii = 3.1416;
 
 //kera ruumala = 4/3 * pii * r**3
@@ -22,7 +24,7 @@ function kera(){
     $keraV = 4 / 3 * $pii * ($r ** 3);
     return $keraV;
 }
-echo 'Kera ruumala on '.kera().' kuupmeetrit.';
+echo 'Kera ruumala on '.kera().' kuupmeetrit.<br>';
 
 //koonuse ruumala = pii * r**2 * (h/3)
 
@@ -33,7 +35,7 @@ function koonus(){
     $koonuseV = $pii * ($r ** 2) * ($h / 3);
     return $koonuseV;
 }
-echo 'Koonuse ruumala on '.koonus().' kuupmeetrit.';
+echo 'Koonuse ruumala on '.koonus().' kuupmeetrit.<br>';
 
 //silindri ruumala = pii * r**2 * h
 
