@@ -52,4 +52,14 @@ $leia_tekstist = strpos($tekst, $otsitav, 0);
 echo $leia_tekstist;
 
 echo '<hr>';
-//
+//teksti asendamine
+$otsi = 'jänes';
+$asenda = 'karu';
+echo str_replace($otsi, $asenda, $tekst);
+
+echo '<hr>';
+
+$otsib = array('talv', 'tuisud', 'jänes', 'uisud');
+$asendab = array('suvi', 'soe', 'hunt', 'püksid');
+echo $tekst.'<br>';
+echo str_replace($otsib, $asendab, $tekst);
