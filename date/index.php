@@ -34,3 +34,12 @@ echo date('d.m.Y G:i' , time()+60) . '<br>';
 echo date('d.m.Y G:i' , time()+60*60) . '<br>';
 echo date('d.m.Y G:i' , time()+60*60*24);
 
+echo '<hr>';
+
+//kpv valideerimine
+
+// if(checkdate(12,32,2013)) {
+//     echo('Kuupäev korras!');
+// } else {
+//     echo ('Kuupäev on valesti sisestatud');
+// }
