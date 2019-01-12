@@ -46,4 +46,10 @@ echo '<br>';
 print_r(str_word_count($tekst, 2));
 
 echo '<hr>';
+//tekstist otsimine
+$otsitav = 'uisud';
+$leia_tekstist = strpos($tekst, $otsitav, 0);
+echo $leia_tekstist;
+
+echo '<hr>';
 //
