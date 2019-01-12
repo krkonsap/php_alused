@@ -26,3 +26,11 @@ $kuu = $eesti_kuud[date('n')];
 $aasta = date('Y');
 //kuupäeva väljastamine
 echo $paev.'.'.$kuu.' '.$aasta;
+
+echo '<hr>';
+
+//tehted kuupäevadega
+echo date('d.m.Y G:i' , time()+60) . '<br>';
+echo date('d.m.Y G:i' , time()+60*60) . '<br>';
+echo date('d.m.Y G:i' , time()+60*60*24);
+
