@@ -37,7 +37,14 @@ echo 'Koonuse ruumala on '.koonus().' kuupmeetrit.';
 
 //silindri ruumala = pii * r**2 * h
 
-
+function silinder(){
+    global $r;
+    global $h;
+    global $pii;
+    $silindriV = $pii * ($r ** 2) * $h;
+    return $silindriV;
+}
+echo 'Silindri ruumala on '.silinder().' kuupmeetrit.';
 
 ?>
 
