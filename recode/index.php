@@ -21,18 +21,21 @@
         <a href="index.php?leht=kontakt">Kontakt<a/>
     </menu>
 
-    <h2>Avaleht</h2>
-    <p>See on avalehekülg.</p>
+    <?php
 
-    <h2>Portfoolio</h2>
-    <p>Siin on näidatud tehtud tööd.</p>
+    if(!empty($_GET['leht'])){
+        include($_GET['leht'].'.php');
+    } else {
 
-    <h2>Kaart</h2>
-    <p>Väike topograafianurk ka.</p>
+        ?>
 
-    <h2>Kontakt</h2>
-    <p>Helista mulle lauatelefonile.</p>
+        <h2>Avaleht</h2>
+        <p>See on avalehekülg.</p>
 
+
+        <?php
+    }
+    ?>
 </body>
 </html>
 
