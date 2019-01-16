@@ -24,7 +24,14 @@
     <?php
 
     if(!empty($_GET['leht'])){
-        include($_GET['leht'].'.php');
+        $leht = htmlspecialchars($_GET['leht']);
+        $lubatud = array('portfoolio','kaart','kontakt');
+        $kontroll = in_array($leht, $lubatud);
+        if($kontroll==true){
+            include($leht.'.php');
+        } else {
+            echo 'Valitud lehte ei eksisteeri!';
+        }
     } else {
 
         ?>
