@@ -12,6 +12,11 @@
 <html>
 <head>
 <title>Koodi taaskasutamine</title>
+    <style>
+        body{
+            background-color: coral;
+        }
+    </style>
 </head>
 <body>
     <menu>
@@ -43,6 +48,7 @@
         <?php
     }
     ?>
+
 </body>
 </html>
 
