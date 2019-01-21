@@ -15,6 +15,7 @@
     <style>
         body{
             background-color: coral;
+            font-family: "Lucida Console", Monaco, monospace;
         }
     </style>
 </head>
