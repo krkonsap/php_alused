@@ -12,9 +12,16 @@ require_once 'dbfnk.php';
 
 $iktConn = connect_db(DBHOST, DBUSER, DBPASS, DBNAME);
 
-
+//insert/update
 $sql = 'UPDATE user SET last_name="Ebatavaline" WHERE user_id=1';
 $res = query($sql, $iktConn);
+
+//select
+$sql = 'SELECT * FROM user';
+$users = getData($sql,$iktConn);
+
 echo '<pre>';
-print_r($res);
+print_r($users);
+
+echo 'Tere, '.$users[0]['first_name'].' '.$users[0]['last_name'].'!<br>';
 
