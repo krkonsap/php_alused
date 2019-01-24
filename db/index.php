@@ -11,5 +11,10 @@ require_once 'dbfnk.php';
 
 
 $iktConn = connect_db(DBHOST, DBUSER, DBPASS, DBNAME);
+
+
+$sql = 'UPDATE user SET last_name="Ebatavaline" WHERE user_id=1';
+$res = query($sql, $iktConn);
 echo '<pre>';
-print_r($iktConn);
+print_r($res);
+
